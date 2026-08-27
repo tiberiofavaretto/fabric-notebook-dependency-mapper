@@ -1,0 +1,14 @@
+# Schemas whose `schema.table` references are treated as data assets.
+# Anything not in this list (e.g. spark.read, df.write) is ignored.
+read_schemas:
+  - bronze
+  - silver
+  - staging
+  - gold
+  - raw
+  - mart
+
+# Notebook file types to scan.
+extensions:
+  - .py
+  - .ipynb
